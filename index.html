@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Urbana</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="img/logo.png" alt="Mi Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#camisetas">Camisetas</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#nuevos">Nuevos Lanzamientos</a></li>
+                <li><a href="#personalizacion">Personalización</a></li>
+                <li><a href="#carrito">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="home">
+        <h1>Bienvenido a Mi Tienda Urbana</h1>
+        <p>Explora nuestra colección de camisetas oversize y personalízalas a tu gusto.</p>
+        <img src="img/portada.jpg" alt="Portada">
+    </section>
+
+    <!-- Sección Camisetas -->
+    <section id="camisetas">
+        <h2>Camisetas Oversize</h2>
+        <div class="producto">
+            <img src="img/camiseta1.jpg" alt="Camiseta Básica">
+            <h3>Camiseta Básica</h3>
+            <p>$20.00</p>
+            <button class="agregar-carrito" data-nombre="Camiseta Básica" data-precio="20">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="img/camiseta2.jpg" alt="Camiseta Surtido">
+            <h3>Camiseta Surtido</h3>
+            <p>$25.00</p>
+            <button class="agregar-carrito" data-nombre="Camiseta Surtido" data-precio="25">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <!-- Sección Ofertas -->
+    <section id="ofertas">
+        <h2>Ofertas</h2>
+        <!-- Agregar ofertas aquí -->
+    </section>
+
+    <!-- Sección Nuevos Lanzamientos -->
+    <section id="nuevos">
+        <h2>Nuevos Lanzamientos</h2>
+        <!-- Agregar nuevos productos aquí -->
+    </section>
+
+    <!-- Sección Personalización -->
+    <section id="personalizacion">
+        <h2>Personaliza tu Camiseta</h2>
+        <form action="#">
+            <label for="tipo">Elige el tipo de camiseta:</label>
+            <select id="tipo" name="tipo">
+                <option value="basica">Básica</option>
+                <option value="surtido">Surtido</option>
+            </select>
+
+            <label for="color">Elige el color:</label>
+            <input type="color" id="color" name="color" value="#000000">
+
+            <label for="estampado">Sube tu diseño:</label>
+            <input type="file" id="estampado" name="estampado" accept="image/*">
+
+            <button type="submit">Enviar a WhatsApp</button>
+        </form>
+    </section>
+
+    <!-- Sección Carrito -->
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <div class="carrito-items">
+            <!-- Aquí se agregarán los productos del carrito -->
+        </div>
+        <div class="carrito-total">
+            <h3>Total: $<span id="total">0.00</span></h3>
+            <button id="procesar-pago">Procesar Pago</button>
+        </div>
+    </section>
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/1234567890" class="whatsapp-button" target="_blank">Contactar por WhatsApp</a>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2024 Mi Tienda Urbana. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
